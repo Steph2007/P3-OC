@@ -1,0 +1,363 @@
+$accueiltext:#fdcb46;
+$accueilback:#579c87;
+$accueilborder:#a1c181;
+$noteback:#fcdfdb;
+$notetext:#3c1218;
+$noteleft:#f04a5e;
+$noteright:#f78f6a;
+$chicback:#fff5fe;
+$chictext:#c77412;
+$chicleft:#d8852e;
+$chiccenter:#b67094;
+$chicright:#905bfd;
+$deliceback:#f9f9f9;
+$delicetext:#0887fb;
+$delicetextmenu:#000000;
+$deliceleft:#0022db;
+$deliceright:#64b2f6;
+$paletteback:#fdfffd;
+$palettetext:#72bf56;
+$palettetextmenu:#000000;
+$paletteleft:#3d9339;
+$paletteright:#bfff7e;
+
+// @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pangolin|Roboto:700&display=swap");
+
+
+
+// @font-face {
+//   font-family: 'coolvetica rg';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: local(font/coolvetica/coolvetica rg) format('woff2');
+//   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+// }
+
+body{
+ width: 100vw;  /*Equivalent to 100% width of viewport */
+ /*height: 100vh;*/  /* same with height */
+ margin: 0;
+
+  	@media(min-width: 768px){
+  	display: block;
+  	}
+
+  	&.accueil{
+	display: block;
+	@media(min-width: 768px){
+    max-width: 1200px;
+    
+		}
+
+	}
+  	
+  }
+
+main{
+display: flex;
+flex-direction: column;
+margin-bottom: 80px;
+font-family: mv boli,sans-serif;
+	&.accueil{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 80px;
+		@media(min-width: 768px){
+		display: grid;
+ 		grid-template-columns: 50% 50%;
+		grid-template-rows: 400px 400px 60px;
+		grid-auto-flow: column;
+		}
+	}
+
+    &.LaNoteEnchantee{
+    background-color:$noteback;
+    color: $notetext;
+    font-family: forte,cursive;
+    	h2{
+    		&:before {
+			content: "\f001";
+			font-family: "Font Awesome 5 Free";
+			margin-right: .5rem;
+			font-size: 20px;
+			margin-top:.3rem;
+			font-weight:900;
+			background:-webkit-linear-gradient(left,$noteleft,$noteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			display: block;
+   			}
+		 }
+   		h3{
+   		display: flex;
+		justify-content: space-evenly;
+   			&:before{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			}
+	
+			&:after{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			}	
+		}
+
+		p{
+		text-align: center;	
+			&:before {
+			content: "\f001";
+			font-family: "Font Awesome 5 Free";
+			margin-right: .5rem;
+			font-size: 20px;
+			margin-top:.3rem;
+			font-weight:900;
+			background:-webkit-linear-gradient(left,$noteleft,$noteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}
+		}
+    }
+
+    &.LeChicALaFrancaise{
+  	background-color:$chicback;
+  	font-family: bodoni mt,Serif;
+
+  		h2{
+		width: fit-content;
+  		align-self:center;
+		}
+   	}
+
+  	&.LeDeliceDesPapilles{
+	background-color:$deliceback;
+	color:$delicetextmenu;
+
+  		h2{
+  		font-family: kunstler Script,cursive;
+  		font-size: 3rem;
+  		width: fit-content;
+  		align-self:center;
+  		background: -webkit-linear-gradient(left,$deliceleft,$deliceright);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  		}
+
+  		h3{
+  			&:before{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			color: $delicetext;
+			}
+		
+			&:after{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			color: $delicetext;
+			}	
+  		}
+	}
+
+	&.LaPaletteDuGout{
+	background-color:$paletteback;
+  	color:$palettetextmenu;
+  	font-family: cavolini, sans-serif;
+
+  		h2{
+  		width: fit-content;
+  		align-self:center;
+  		background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  		}
+
+  		h3{
+  			&:before{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}
+
+			&:after{
+			content: "----------------------";
+			letter-spacing:-0.2rem;
+			background: -webkit-linear-gradient(right,$paletteleft,$paletteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}	
+  		}
+	}
+}
+
+.degrade{
+	
+	&.LaNoteEnchantee{
+	background:
+	-webkit-linear-gradient(left,$noteleft,$noteright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LeChicALaFrancaise{
+	background: 
+	-webkit-linear-gradient(left,$chicleft,$chicright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LeDeliceDesPapilles{
+
+	background: 
+	-webkit-linear-gradient(left,$deliceleft,$deliceright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LaPaletteDuGout{
+	background: 
+	-webkit-linear-gradient(left,$paletteleft,$paletteright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+}
+
+header{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row: 1;
+	background-color: $accueilback;
+	border-bottom-color: $accueilborder;
+	text-align: center;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	font-family: abadi,sans-serif;
+		h1{		
+			a{
+			color: $accueiltext;
+			cursor: pointer;
+			text-decoration:none;
+			font-size: 1.5em;
+			}
+		}
+}
+
+h2{
+text-align: center;
+}
+
+h3{
+display: flex;
+justify-content: space-evenly;
+
+	&.firstchic{
+	color:$chicleft;
+	
+		&:before{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}
+		
+		&:after{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}	
+	}
+
+	&.scdchic{
+	color:$chiccenter;
+		
+		&:before{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}
+		
+		&:after{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}	
+	}
+
+	&.thdchic{
+	color:$chicright;
+
+		&:before{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}
+		
+		&:after{
+		content: "----------------------";
+		letter-spacing:-0.2rem;
+		}	
+	}
+}
+
+footer{
+background-color: $accueilback;
+border-top-color: $accueilborder;
+display: flex;
+justify-content: space-between;
+width: 100%;
+position: fixed;
+bottom: 0;
+font-family: abadi,sans-serif;
+
+	a {
+	cursor: pointer;
+	text-decoration:none;
+	padding: 1rem;
+	color:$accueiltext;
+		
+		&:hover {
+		animation:wiggle 200ms infinite;
+		}
+	}
+}
+
+@keyframes wiggle {
+       0% { transform: rotate(0deg); }
+      33% { transform: rotate(5deg); }
+      66% { transform: rotate(-5deg); }
+     100% { transform: rotate(0deg); }
+}
+
+.conteneur {
+padding: 0;
+list-style-type:none;
+
+	li {
+    display:flex;
+    justify-content:space-between;
+    margin: 1.5rem 0;
+    width: 90vw;
+    max-width: 800px;
+  	}
+
+	&.firstchic{
+	color: $chicleft;
+	}
+
+	&.scdchic{
+	color: $chiccenter;
+	}
+
+	&.thdchic{
+	color: $chicright;
+	}	
+}
+  
+.plat{
+ display:block;
+ text-align: justify;
+ max-width: 70vw;
+}
+
+.prix{
+ display:block;
+}
+
+
+

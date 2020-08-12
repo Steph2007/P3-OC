@@ -1,0 +1,1024 @@
+@charset "UTF-8";
+body {
+  width: 100vw;
+  /*Equivalent to 100% width of viewport */
+  /*height: 100vh;*/
+  /* same with height */
+  margin: 0;
+}
+@media (min-width: 768px) {
+  body {
+    display: block;
+  }
+}
+body.accueil {
+  display: block;
+}
+@media (min-width: 768px) {
+  body.accueil {
+    max-width: 1200px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  font-family: mv boli, sans-serif;
+}
+main.accueil {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  main.accueil {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 60px;
+    grid-auto-flow: column;
+  }
+}
+main.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: forte, cursive;
+}
+main.LaNoteEnchantee h2:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+main.LaNoteEnchantee h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+main.LaNoteEnchantee h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee p {
+  text-align: center;
+}
+main.LaNoteEnchantee p:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeChicALaFrancaise {
+  background-color: #fff5fe;
+  font-family: bodoni mt, Serif;
+}
+main.LeChicALaFrancaise h2 {
+  width: fit-content;
+  align-self: center;
+}
+main.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+main.LeDeliceDesPapilles h2 {
+  font-family: kunstler Script, cursive;
+  font-size: 3rem;
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeDeliceDesPapilles h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LeDeliceDesPapilles h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LaPaletteDuGout {
+  background-color: #fdfffd;
+  color: #000000;
+  font-family: cavolini, sans-serif;
+}
+main.LaPaletteDuGout h2 {
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade.LaNoteEnchantee {
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeChicALaFrancaise {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeDeliceDesPapilles {
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LaPaletteDuGout {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 1;
+  background-color: #579c87;
+  border-bottom-color: #a1c181;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  font-family: abadi, sans-serif;
+}
+header h1 a {
+  color: #fdcb46;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+h3.firstchic {
+  color: #d8852e;
+}
+h3.firstchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.firstchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic {
+  color: #b67094;
+}
+h3.scdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic {
+  color: #905bfd;
+}
+h3.thdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+
+footer {
+  background-color: #579c87;
+  border-top-color: #a1c181;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-family: abadi, sans-serif;
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle 200ms infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.conteneur {
+  padding: 0;
+  list-style-type: none;
+}
+.conteneur li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  width: 90vw;
+  max-width: 800px;
+}
+.conteneur.firstchic {
+  color: #d8852e;
+}
+.conteneur.scdchic {
+  color: #b67094;
+}
+.conteneur.thdchic {
+  color: #905bfd;
+}
+
+.plat {
+  display: block;
+  text-align: justify;
+  max-width: 70vw;
+}
+
+.prix {
+  display: block;
+}
+
+article {
+  width: 80vw;
+  max-width: 250px;
+  height: 55vh;
+  place-self: center;
+  text-align: center;
+  box-shadow: 1px 1px 12px #555;
+  cursor: pointer;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  article {
+    width: 250px;
+  }
+}
+article.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  grid-column: 1;
+  grid-row: 1;
+  font-family: forte, cursive;
+}
+article.LaNoteEnchantee h2 :before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+article.LaNoteEnchantee h2 a {
+  color: #3c1218;
+  text-decoration: none;
+}
+article.LeChicALaFrancaise {
+  background-color: #fff5fe;
+  grid-column: 2;
+  grid-row: 1;
+  font-family: bodoni mt, serif;
+}
+article.LeChicALaFrancaise h2 a {
+  color: #c77412;
+  text-decoration: none;
+}
+article.LeChicALaFrancaise h2 span {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+article.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  grid-column: 1;
+  grid-row: 2;
+  font-family: kunstler script, cursive;
+}
+article.LeDeliceDesPapilles h2 a {
+  color: #0887fb;
+  text-decoration: none;
+}
+article.LeDeliceDesPapilles h2 span {
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+article.LaPaletteDuGout {
+  background-color: #fdfffd;
+  grid-column: 2;
+  grid-row: 2;
+  font-family: cavolini, sans-serif;
+}
+article.LaPaletteDuGout h2 a {
+  color: #72bf56;
+  text-decoration: none;
+}
+article.LaPaletteDuGout h2 span {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+article h2:hover {
+  animation: zoom 600ms infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+    opacity: 100%;
+  }
+  25% {
+    transform: scale(1.05);
+    opacity: 90%;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 75%;
+  }
+  75% {
+    transform: scale(1.05);
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 25%;
+  }
+}
+aside {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 3;
+  align-items: center;
+  font-family: abadi, sans-serif;
+}
+aside span {
+  font-size: 2rem;
+  animation: fondu 900ms infinite;
+}
+aside span.firstpoint {
+  animation-delay: 400ms;
+}
+aside span.scdpoint {
+  animation-delay: 600ms;
+}
+aside span.thdpoint {
+  animation-delay: 800ms;
+}
+
+@keyframes fondu {
+  0% {
+    color: transparent;
+  }
+  33% {
+    color: #fdcb46;
+    opacity: 33%;
+  }
+  66% {
+    color: #fdcb46;
+    opacity: 66%;
+  }
+  100% {
+    color: #fdcb46;
+    opacity: 100%;
+  }
+}
+.btn {
+  background: #579c87;
+  color: #fdcb46;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 15rem;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 AUTO;
+  padding: 6px;
+}@charset "UTF-8";
+body {
+  width: 100vw;
+  /*Equivalent to 100% width of viewport */
+  /*height: 100vh;*/
+  /* same with height */
+  margin: 0;
+}
+@media (min-width: 768px) {
+  body {
+    display: block;
+  }
+}
+body.accueil {
+  display: block;
+}
+@media (min-width: 768px) {
+  body.accueil {
+    max-width: 1200px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  font-family: mv boli, sans-serif;
+}
+main.accueil {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  main.accueil {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 60px;
+    grid-auto-flow: column;
+  }
+}
+main.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: forte, cursive;
+}
+main.LaNoteEnchantee h2:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+main.LaNoteEnchantee h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+main.LaNoteEnchantee h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee p {
+  text-align: center;
+}
+main.LaNoteEnchantee p:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeChicALaFrancaise {
+  background-color: #fff5fe;
+  font-family: bodoni mt, Serif;
+}
+main.LeChicALaFrancaise h2 {
+  width: fit-content;
+  align-self: center;
+}
+main.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+main.LeDeliceDesPapilles h2 {
+  font-family: kunstler Script, cursive;
+  font-size: 3rem;
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeDeliceDesPapilles h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LeDeliceDesPapilles h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LaPaletteDuGout {
+  background-color: #fdfffd;
+  color: #000000;
+  font-family: cavolini, sans-serif;
+}
+main.LaPaletteDuGout h2 {
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade.LaNoteEnchantee {
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeChicALaFrancaise {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeDeliceDesPapilles {
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LaPaletteDuGout {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 1;
+  background-color: #579c87;
+  border-bottom-color: #a1c181;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  font-family: abadi, sans-serif;
+}
+header h1 a {
+  color: #fdcb46;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+h3.firstchic {
+  color: #d8852e;
+}
+h3.firstchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.firstchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic {
+  color: #b67094;
+}
+h3.scdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic {
+  color: #905bfd;
+}
+h3.thdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+
+footer {
+  background-color: #579c87;
+  border-top-color: #a1c181;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-family: abadi, sans-serif;
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle 200ms infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.conteneur {
+  padding: 0;
+  list-style-type: none;
+}
+.conteneur li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  width: 90vw;
+  max-width: 800px;
+}
+.conteneur.firstchic {
+  color: #d8852e;
+}
+.conteneur.scdchic {
+  color: #b67094;
+}
+.conteneur.thdchic {
+  color: #905bfd;
+}
+
+.plat {
+  display: block;
+  text-align: justify;
+  max-width: 70vw;
+}
+
+.prix {
+  display: block;
+}@charset "UTF-8";
+body {
+  width: 100vw;
+  /*Equivalent to 100% width of viewport */
+  /*height: 100vh;*/
+  /* same with height */
+  margin: 0;
+}
+@media (min-width: 768px) {
+  body {
+    display: block;
+  }
+}
+body.accueil {
+  display: block;
+}
+@media (min-width: 768px) {
+  body.accueil {
+    max-width: 1200px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  font-family: mv boli, sans-serif;
+}
+main.accueil {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  main.accueil {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 60px;
+    grid-auto-flow: column;
+  }
+}
+main.LaNoteEnchantee {
+  background-color: #fcdfdb;
+  color: #3c1218;
+  font-family: forte, cursive;
+}
+main.LaNoteEnchantee h2:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: block;
+}
+main.LaNoteEnchantee h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+main.LaNoteEnchantee h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+main.LaNoteEnchantee p {
+  text-align: center;
+}
+main.LaNoteEnchantee p:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeChicALaFrancaise {
+  background-color: #fff5fe;
+  font-family: bodoni mt, Serif;
+}
+main.LeChicALaFrancaise h2 {
+  width: fit-content;
+  align-self: center;
+}
+main.LeDeliceDesPapilles {
+  background-color: #f9f9f9;
+  color: #000000;
+}
+main.LeDeliceDesPapilles h2 {
+  font-family: kunstler Script, cursive;
+  font-size: 3rem;
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LeDeliceDesPapilles h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LeDeliceDesPapilles h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  color: #0887fb;
+}
+main.LaPaletteDuGout {
+  background-color: #fdfffd;
+  color: #000000;
+  font-family: cavolini, sans-serif;
+}
+main.LaPaletteDuGout h2 {
+  width: fit-content;
+  align-self: center;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main.LaPaletteDuGout h3:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+  background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.degrade.LaNoteEnchantee {
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeChicALaFrancaise {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeDeliceDesPapilles {
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LaPaletteDuGout {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 1;
+  background-color: #579c87;
+  border-bottom-color: #a1c181;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  font-family: abadi, sans-serif;
+}
+header h1 a {
+  color: #fdcb46;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+h3.firstchic {
+  color: #d8852e;
+}
+h3.firstchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.firstchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic {
+  color: #b67094;
+}
+h3.scdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.scdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic {
+  color: #905bfd;
+}
+h3.thdchic:before {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+h3.thdchic:after {
+  content: "----------------------";
+  letter-spacing: -0.2rem;
+}
+
+footer {
+  background-color: #579c87;
+  border-top-color: #a1c181;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-family: abadi, sans-serif;
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle 200ms infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.conteneur {
+  padding: 0;
+  list-style-type: none;
+}
+.conteneur li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  width: 90vw;
+  max-width: 800px;
+}
+.conteneur.firstchic {
+  color: #d8852e;
+}
+.conteneur.scdchic {
+  color: #b67094;
+}
+.conteneur.thdchic {
+  color: #905bfd;
+}
+
+.plat {
+  display: block;
+  text-align: justify;
+  max-width: 70vw;
+}
+
+.prix {
+  display: block;
+}
