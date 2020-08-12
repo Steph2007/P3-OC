@@ -1,0 +1,23 @@
+{
+  "name": "p3-oc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassify" : "node ./dev_scripts/makeSass.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steph2007/P3-OC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steph2007/P3-OC/issues"
+  },
+  "homepage": "https://github.com/Steph2007/P3-OC#readme",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}

@@ -1,0 +1,196 @@
+@import 'scss/menus';
+
+
+article{
+width: 80vw;
+max-width: 250px;
+height: 55vh;
+place-self: center;
+text-align: center;
+box-shadow: 1px 1px 12px #555;
+cursor: pointer;
+margin: 1.5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+	@media(min-width: 768px){
+	width: 250px;
+	}
+
+	
+	&.LaNoteEnchantee{
+	background-color: $noteback;
+	grid-column:1;
+	grid-row:1;
+	font-family: forte,cursive;
+
+		h2{
+			:before {
+			content: "\f001";
+			font-family: "Font Awesome 5 Free";
+			margin-right: .5rem;
+			font-size: 20px;
+			margin-top:.3rem;
+			font-weight:900;
+			background:-webkit-linear-gradient(left,$noteleft,$noteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			display: block;
+			}
+
+ 			a{
+			color:$notetext;
+			text-decoration: none;
+			}
+		}
+	}
+
+	&.LeChicALaFrancaise{
+	background-color: $chicback;
+	grid-column:2;
+	grid-row:1;
+	font-family: bodoni mt,serif;
+
+		h2{
+			a{
+			color: $chictext;
+			text-decoration: none;
+			}
+
+			span{
+			background: -webkit-linear-gradient(left,$chicleft,$chicright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}
+
+		}
+	}
+
+	&.LeDeliceDesPapilles{
+	background-color: $deliceback;
+	grid-column:1;
+	grid-row:2;
+	font-family: kunstler script,cursive;
+
+		h2{
+			a{
+			color: $delicetext;
+			text-decoration: none;
+			}
+
+			span{
+			background: -webkit-linear-gradient(left,$deliceleft,$deliceright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	&.LaPaletteDuGout{
+	background-color: $paletteback;
+	grid-column:2;
+	grid-row:2;
+	font-family:cavolini, sans-serif;
+
+		h2{
+			a{
+			color: $palettetext;
+			text-decoration: none;
+			}
+
+			span{
+			background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	h2{
+		&:hover{
+		animation:zoom 600ms infinite;
+		}
+	}
+}
+
+@keyframes zoom {
+0% { transform: scale(1);opacity: 100%; }
+25% { transform: scale(1.05);opacity: 90%; }
+50% { transform: scale(1.1);opacity: 75%;}
+75% { transform: scale(1.05);opacity: 50%; }
+100% { transform: scale(1);opacity: 25%; }
+}
+
+
+aside{
+
+grid-column-start: 1;
+grid-column-end: span 2;
+grid-row: 3;
+align-items: center;
+font-family: abadi,sans-serif;
+
+	span{
+	font-size: 2rem;
+	animation:fondu 900ms infinite;
+	&.firstpoint{
+		animation-delay:400ms;
+		}
+	&.scdpoint{
+		animation-delay:600ms;
+		}
+	&.thdpoint{
+		animation-delay:800ms;
+		}
+	}
+}
+
+@keyframes fondu{
+	0%{color:transparent;}
+	33%{color: $accueiltext;opacity: 33%;}
+	66%{color: $accueiltext;opacity: 66%;}
+	100%{color: $accueiltext;opacity: 100%}
+}
+   
+
+.btn {
+    background: $accueilback;
+    color: $accueiltext;
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 15rem;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 AUTO;
+    padding: 6px;
+}
+
+
+
+
+
+// @media screen AND (min-width:768px){
+//   body {
+//     display: grid;
+//     grid-template-columns: 50% 50%;
+//     grid-template-rows: 80px 400px 400px 60px 80px;
+//     grid-auto-flow: column;
+//     max-width: 1200px;
+//     margin: 0;
+//   }
+//   article{
+// 	width: 250px;
+// 	height: 300px;
+// 	text-align: center;
+// 	box-shadow: 1px 1px 12px #555;
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+//   }
+// 
+
+  
+
+
+  
