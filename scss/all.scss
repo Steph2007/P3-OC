@@ -1,0 +1,113 @@
+$accueiltext:#fdcb46;
+$accueilback:#579c87;
+$accueilborder:#a1c181;
+$noteback:#fcdfdb;
+$notetext:#3c1218;
+$noteleft:#f04a5e;
+$noteright:#f78f6a;
+$chicback:#fff5fe;
+$chictext:#c77412;
+$chicleft:#d8852e;
+$chiccenter:#b67094;
+$chicright:#905bfd;
+$deliceback:#f9f9f9;
+$delicetext:#0887fb;
+$delicetextmenu:#000000;
+$deliceleft:#0022db;
+$deliceright:#64b2f6;
+$paletteback:#fdfffd;
+$palettetext:#72bf56;
+$palettetextmenu:#000000;
+$paletteleft:#3d9339;
+$paletteright:#bfff7e;
+
+body{
+ margin: 0;
+  	@media(min-width: 768px){
+  	display: block;
+    max-width: 1200px;
+  	}
+}
+
+  header{
+	grid-column-start: 1;
+	grid-column-end: span 2;
+	grid-row: 1;
+	background-color: $accueilback;
+	border-bottom-color: $accueilborder;
+	text-align: center;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	font-family: abadi,sans-serif;
+		h1{		
+			a{
+			color: $accueiltext;
+			cursor: pointer;
+			text-decoration:none;
+			font-size: 1.5em;
+			}
+		}
+}
+
+  .degrade{
+	
+	&.LaNoteEnchantee{
+	background:
+	-webkit-linear-gradient(left,$noteleft,$noteright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LeChicALaFrancaise{
+	background: 
+	-webkit-linear-gradient(left,$chicleft,$chicright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LeDeliceDesPapilles{
+
+	background: 
+	-webkit-linear-gradient(left,$deliceleft,$deliceright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+	&.LaPaletteDuGout{
+	background: 
+	-webkit-linear-gradient(left,$paletteleft,$paletteright);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+}
+
+footer{
+background-color: $accueilback;
+border-top-color: $accueilborder;
+display: flex;
+justify-content: space-between;
+width: 100%;
+position: fixed;
+bottom: 0;
+font-family: abadi,sans-serif;
+
+	a {
+	cursor: pointer;
+	text-decoration:none;
+	padding: 1rem;
+	color:$accueiltext;
+		
+		&:hover {
+		animation:wiggle 200ms infinite;
+		}
+	}
+}
+
+@keyframes wiggle {
+       0% { transform: rotate(0deg); }
+      33% { transform: rotate(5deg); }
+      66% { transform: rotate(-5deg); }
+     100% { transform: rotate(0deg); }
+}
+

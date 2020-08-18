@@ -1,9 +1,5 @@
 @charset "UTF-8";
 body {
-  width: 100vw;
-  /*Equivalent to 100% width of viewport */
-  /*height: 100vh;*/
-  /* same with height */
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -24,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: mv boli, sans-serif;
+  font-family: "mv boli", sans-serif;
 }
 main.accueil {
   display: flex;
@@ -42,7 +38,7 @@ main.accueil {
 main.LaNoteEnchantee {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: forte, cursive;
+  font-family: "forte", cursive;
 }
 main.LaNoteEnchantee h2:before {
   content: "";
@@ -63,10 +59,14 @@ main.LaNoteEnchantee h3 {
 main.LaNoteEnchantee h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee p {
   text-align: center;
@@ -84,7 +84,7 @@ main.LaNoteEnchantee p:before {
 }
 main.LeChicALaFrancaise {
   background-color: #fff5fe;
-  font-family: bodoni mt, Serif;
+  font-family: "bodoni mt", Serif;
 }
 main.LeChicALaFrancaise h2 {
   width: fit-content;
@@ -95,7 +95,7 @@ main.LeDeliceDesPapilles {
   color: #000000;
 }
 main.LeDeliceDesPapilles h2 {
-  font-family: kunstler Script, cursive;
+  font-family: "kunstler Script", cursive;
   font-size: 3rem;
   width: fit-content;
   align-self: center;
@@ -107,16 +107,20 @@ main.LeDeliceDesPapilles h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LeDeliceDesPapilles h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout {
   background-color: #fdfffd;
   color: #000000;
-  font-family: cavolini, sans-serif;
+  font-family: "cavolini", sans-serif;
 }
 main.LaPaletteDuGout h2 {
   width: fit-content;
@@ -131,6 +135,8 @@ main.LaPaletteDuGout h3:before {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout h3:after {
   content: "----------------------";
@@ -138,6 +144,8 @@ main.LaPaletteDuGout h3:after {
   background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .degrade.LaNoteEnchantee {
@@ -171,7 +179,7 @@ header {
   height: 5rem;
   display: flex;
   justify-content: center;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 header h1 a {
   color: #fdcb46;
@@ -194,10 +202,14 @@ h3.firstchic {
 h3.firstchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.firstchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic {
   color: #b67094;
@@ -205,10 +217,14 @@ h3.scdchic {
 h3.scdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic {
   color: #905bfd;
@@ -216,10 +232,14 @@ h3.thdchic {
 h3.thdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 footer {
@@ -230,7 +250,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 footer a {
   cursor: pointer;
@@ -263,7 +283,7 @@ footer a:hover {
 .conteneur li {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   width: 90vw;
   max-width: 800px;
 }
@@ -299,6 +319,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   article {
@@ -309,7 +330,7 @@ article.LaNoteEnchantee {
   background-color: #fcdfdb;
   grid-column: 1;
   grid-row: 1;
-  font-family: forte, cursive;
+  font-family: "forte", cursive;
 }
 article.LaNoteEnchantee h2 :before {
   content: "";
@@ -331,7 +352,7 @@ article.LeChicALaFrancaise {
   background-color: #fff5fe;
   grid-column: 2;
   grid-row: 1;
-  font-family: bodoni mt, serif;
+  font-family: "bodoni mt", serif;
 }
 article.LeChicALaFrancaise h2 a {
   color: #c77412;
@@ -346,7 +367,7 @@ article.LeDeliceDesPapilles {
   background-color: #f9f9f9;
   grid-column: 1;
   grid-row: 2;
-  font-family: kunstler script, cursive;
+  font-family: "kunstler script", cursive;
 }
 article.LeDeliceDesPapilles h2 a {
   color: #0887fb;
@@ -361,7 +382,7 @@ article.LaPaletteDuGout {
   background-color: #fdfffd;
   grid-column: 2;
   grid-row: 2;
-  font-family: cavolini, sans-serif;
+  font-family: "cavolini", sans-serif;
 }
 article.LaPaletteDuGout h2 a {
   color: #72bf56;
@@ -403,7 +424,7 @@ aside {
   grid-column-end: span 2;
   grid-row: 3;
   align-items: center;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 aside span {
   font-size: 2rem;
@@ -445,14 +466,10 @@ aside span.thdpoint {
   height: auto;
   border-radius: 10px;
   text-align: center;
-  margin: 0 AUTO;
+  margin: 0 auto;
   padding: 6px;
 }@charset "UTF-8";
 body {
-  width: 100vw;
-  /*Equivalent to 100% width of viewport */
-  /*height: 100vh;*/
-  /* same with height */
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -473,7 +490,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: mv boli, sans-serif;
+  font-family: "mv boli", sans-serif;
 }
 main.accueil {
   display: flex;
@@ -491,7 +508,7 @@ main.accueil {
 main.LaNoteEnchantee {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: forte, cursive;
+  font-family: "forte", cursive;
 }
 main.LaNoteEnchantee h2:before {
   content: "";
@@ -512,10 +529,14 @@ main.LaNoteEnchantee h3 {
 main.LaNoteEnchantee h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee p {
   text-align: center;
@@ -533,7 +554,7 @@ main.LaNoteEnchantee p:before {
 }
 main.LeChicALaFrancaise {
   background-color: #fff5fe;
-  font-family: bodoni mt, Serif;
+  font-family: "bodoni mt", Serif;
 }
 main.LeChicALaFrancaise h2 {
   width: fit-content;
@@ -544,7 +565,7 @@ main.LeDeliceDesPapilles {
   color: #000000;
 }
 main.LeDeliceDesPapilles h2 {
-  font-family: kunstler Script, cursive;
+  font-family: "kunstler Script", cursive;
   font-size: 3rem;
   width: fit-content;
   align-self: center;
@@ -556,16 +577,20 @@ main.LeDeliceDesPapilles h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LeDeliceDesPapilles h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout {
   background-color: #fdfffd;
   color: #000000;
-  font-family: cavolini, sans-serif;
+  font-family: "cavolini", sans-serif;
 }
 main.LaPaletteDuGout h2 {
   width: fit-content;
@@ -580,6 +605,8 @@ main.LaPaletteDuGout h3:before {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout h3:after {
   content: "----------------------";
@@ -587,6 +614,8 @@ main.LaPaletteDuGout h3:after {
   background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .degrade.LaNoteEnchantee {
@@ -620,7 +649,7 @@ header {
   height: 5rem;
   display: flex;
   justify-content: center;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 header h1 a {
   color: #fdcb46;
@@ -643,10 +672,14 @@ h3.firstchic {
 h3.firstchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.firstchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic {
   color: #b67094;
@@ -654,10 +687,14 @@ h3.scdchic {
 h3.scdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic {
   color: #905bfd;
@@ -665,10 +702,14 @@ h3.thdchic {
 h3.thdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 footer {
@@ -679,7 +720,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 footer a {
   cursor: pointer;
@@ -712,7 +753,7 @@ footer a:hover {
 .conteneur li {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
   width: 90vw;
   max-width: 800px;
 }
@@ -736,10 +777,6 @@ footer a:hover {
   display: block;
 }@charset "UTF-8";
 body {
-  width: 100vw;
-  /*Equivalent to 100% width of viewport */
-  /*height: 100vh;*/
-  /* same with height */
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -760,7 +797,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: mv boli, sans-serif;
+  font-family: "mv boli", sans-serif;
 }
 main.accueil {
   display: flex;
@@ -778,7 +815,7 @@ main.accueil {
 main.LaNoteEnchantee {
   background-color: #fcdfdb;
   color: #3c1218;
-  font-family: forte, cursive;
+  font-family: "forte", cursive;
 }
 main.LaNoteEnchantee h2:before {
   content: "";
@@ -799,10 +836,14 @@ main.LaNoteEnchantee h3 {
 main.LaNoteEnchantee h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaNoteEnchantee p {
   text-align: center;
@@ -820,7 +861,7 @@ main.LaNoteEnchantee p:before {
 }
 main.LeChicALaFrancaise {
   background-color: #fff5fe;
-  font-family: bodoni mt, Serif;
+  font-family: "bodoni mt", Serif;
 }
 main.LeChicALaFrancaise h2 {
   width: fit-content;
@@ -831,7 +872,7 @@ main.LeDeliceDesPapilles {
   color: #000000;
 }
 main.LeDeliceDesPapilles h2 {
-  font-family: kunstler Script, cursive;
+  font-family: "kunstler Script", cursive;
   font-size: 3rem;
   width: fit-content;
   align-self: center;
@@ -843,16 +884,20 @@ main.LeDeliceDesPapilles h3:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LeDeliceDesPapilles h3:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
   color: #0887fb;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout {
   background-color: #fdfffd;
   color: #000000;
-  font-family: cavolini, sans-serif;
+  font-family: "cavolini", sans-serif;
 }
 main.LaPaletteDuGout h2 {
   width: fit-content;
@@ -867,6 +912,8 @@ main.LaPaletteDuGout h3:before {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 main.LaPaletteDuGout h3:after {
   content: "----------------------";
@@ -874,6 +921,8 @@ main.LaPaletteDuGout h3:after {
   background: -webkit-linear-gradient(right, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .degrade.LaNoteEnchantee {
@@ -907,7 +956,7 @@ header {
   height: 5rem;
   display: flex;
   justify-content: center;
-  font-family: abadi, sans-serif;
+  font-family: "abadi", sans-serif;
 }
 header h1 a {
   color: #fdcb46;
@@ -930,10 +979,14 @@ h3.firstchic {
 h3.firstchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.firstchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic {
   color: #b67094;
@@ -941,10 +994,14 @@ h3.scdchic {
 h3.scdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.scdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic {
   color: #905bfd;
@@ -952,10 +1009,127 @@ h3.thdchic {
 h3.thdchic:before {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
 }
 h3.thdchic:after {
   content: "----------------------";
   letter-spacing: -0.2rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+footer {
+  background-color: #579c87;
+  border-top-color: #a1c181;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  font-family: "abadi", sans-serif;
+}
+footer a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1rem;
+  color: #fdcb46;
+}
+footer a:hover {
+  animation: wiggle 200ms infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.conteneur {
+  padding: 0;
+  list-style-type: none;
+}
+.conteneur li {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem auto;
+  width: 90vw;
+  max-width: 800px;
+}
+.conteneur.firstchic {
+  color: #d8852e;
+}
+.conteneur.scdchic {
+  color: #b67094;
+}
+.conteneur.thdchic {
+  color: #905bfd;
+}
+
+.plat {
+  display: block;
+  text-align: justify;
+  max-width: 70vw;
+}
+
+.prix {
+  display: block;
+}body {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  body {
+    display: block;
+    max-width: 1200px;
+  }
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row: 1;
+  background-color: #579c87;
+  border-bottom-color: #a1c181;
+  text-align: center;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  font-family: abadi, sans-serif;
+}
+header h1 a {
+  color: #fdcb46;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.degrade.LaNoteEnchantee {
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeChicALaFrancaise {
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LeDeliceDesPapilles {
+  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.degrade.LaPaletteDuGout {
+  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -991,34 +1165,4 @@ footer a:hover {
   100% {
     transform: rotate(0deg);
   }
-}
-.conteneur {
-  padding: 0;
-  list-style-type: none;
-}
-.conteneur li {
-  display: flex;
-  justify-content: space-between;
-  margin: 1.5rem 0;
-  width: 90vw;
-  max-width: 800px;
-}
-.conteneur.firstchic {
-  color: #d8852e;
-}
-.conteneur.scdchic {
-  color: #b67094;
-}
-.conteneur.thdchic {
-  color: #905bfd;
-}
-
-.plat {
-  display: block;
-  text-align: justify;
-  max-width: 70vw;
-}
-
-.prix {
-  display: block;
 }

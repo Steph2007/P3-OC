@@ -6,6 +6,7 @@ const src=[
 	"accueil",
 	"menus",
 	"mentions",
+	"all",
 ];
 
 let result = "";

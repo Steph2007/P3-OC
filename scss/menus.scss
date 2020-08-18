@@ -1,3 +1,16 @@
+// @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pangolin|Roboto:700&display=swap");
+
+
+
+// @font-face {
+//   font-family: 'coolvetica rg';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: local(font/coolvetica/coolvetica rg) format('woff2');
+//   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+// }
+
 $accueiltext:#fdcb46;
 $accueilback:#579c87;
 $accueilborder:#a1c181;
@@ -35,8 +48,6 @@ $paletteright:#bfff7e;
 // }
 
 body{
- width: 100vw;  /*Equivalent to 100% width of viewport */
- /*height: 100vh;*/  /* same with height */
  margin: 0;
 
   	@media(min-width: 768px){
@@ -58,7 +69,7 @@ main{
 display: flex;
 flex-direction: column;
 margin-bottom: 80px;
-font-family: mv boli,sans-serif;
+font-family: "mv boli",sans-serif;
 	&.accueil{
 	display: flex;
 	flex-direction: column;
@@ -74,7 +85,7 @@ font-family: mv boli,sans-serif;
     &.LaNoteEnchantee{
     background-color:$noteback;
     color: $notetext;
-    font-family: forte,cursive;
+    font-family: "forte",cursive;
     	h2{
     		&:before {
 			content: "\f001";
@@ -95,11 +106,15 @@ font-family: mv boli,sans-serif;
    			&:before{
 			content: "----------------------";
 			letter-spacing:-0.2rem;
+			overflow: hidden;
+    		white-space: nowrap;
 			}
 	
 			&:after{
 			content: "----------------------";
 			letter-spacing:-0.2rem;
+			overflow: hidden;
+    		white-space: nowrap;
 			}	
 		}
 
@@ -121,7 +136,7 @@ font-family: mv boli,sans-serif;
 
     &.LeChicALaFrancaise{
   	background-color:$chicback;
-  	font-family: bodoni mt,Serif;
+  	font-family: "bodoni mt",Serif;
 
   		h2{
 		width: fit-content;
@@ -134,7 +149,7 @@ font-family: mv boli,sans-serif;
 	color:$delicetextmenu;
 
   		h2{
-  		font-family: kunstler Script,cursive;
+  		font-family: "kunstler Script",cursive;
   		font-size: 3rem;
   		width: fit-content;
   		align-self:center;
@@ -148,12 +163,16 @@ font-family: mv boli,sans-serif;
 			content: "----------------------";
 			letter-spacing:-0.2rem;
 			color: $delicetext;
+			overflow: hidden;
+    		white-space: nowrap;
 			}
 		
 			&:after{
 			content: "----------------------";
 			letter-spacing:-0.2rem;
 			color: $delicetext;
+			overflow: hidden;
+    		white-space: nowrap;
 			}	
   		}
 	}
@@ -161,7 +180,7 @@ font-family: mv boli,sans-serif;
 	&.LaPaletteDuGout{
 	background-color:$paletteback;
   	color:$palettetextmenu;
-  	font-family: cavolini, sans-serif;
+  	font-family: "cavolini", sans-serif;
 
   		h2{
   		width: fit-content;
@@ -178,6 +197,8 @@ font-family: mv boli,sans-serif;
 			background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			overflow: hidden;
+    		white-space: nowrap;
 			}
 
 			&:after{
@@ -186,6 +207,8 @@ font-family: mv boli,sans-serif;
 			background: -webkit-linear-gradient(right,$paletteleft,$paletteright);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
+			overflow: hidden;
+    		white-space: nowrap;
 			}	
   		}
 	}
@@ -233,7 +256,7 @@ header{
 	height: 5rem;
 	display: flex;
 	justify-content: center;
-	font-family: abadi,sans-serif;
+	font-family: "abadi",sans-serif;
 		h1{		
 			a{
 			color: $accueiltext;
@@ -258,11 +281,15 @@ justify-content: space-evenly;
 		&:before{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}
 		
 		&:after{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}	
 	}
 
@@ -272,11 +299,15 @@ justify-content: space-evenly;
 		&:before{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}
 		
 		&:after{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}	
 	}
 
@@ -286,11 +317,15 @@ justify-content: space-evenly;
 		&:before{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}
 		
 		&:after{
 		content: "----------------------";
 		letter-spacing:-0.2rem;
+		overflow: hidden;
+    	white-space: nowrap;
 		}	
 	}
 }
@@ -303,7 +338,7 @@ justify-content: space-between;
 width: 100%;
 position: fixed;
 bottom: 0;
-font-family: abadi,sans-serif;
+font-family: "abadi",sans-serif;
 
 	a {
 	cursor: pointer;
@@ -331,7 +366,7 @@ list-style-type:none;
 	li {
     display:flex;
     justify-content:space-between;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
     width: 90vw;
     max-width: 800px;
   	}
@@ -358,6 +393,5 @@ list-style-type:none;
 .prix{
  display:block;
 }
-
 
 

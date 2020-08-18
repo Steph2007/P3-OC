@@ -13,6 +13,7 @@ margin: 1.5rem;
 display: flex;
 flex-direction: column;
 justify-content: center;
+overflow: hidden;
 	@media(min-width: 768px){
 	width: 250px;
 	}
@@ -22,7 +23,7 @@ justify-content: center;
 	background-color: $noteback;
 	grid-column:1;
 	grid-row:1;
-	font-family: forte,cursive;
+	font-family: "forte",cursive;
 
 		h2{
 			:before {
@@ -49,7 +50,7 @@ justify-content: center;
 	background-color: $chicback;
 	grid-column:2;
 	grid-row:1;
-	font-family: bodoni mt,serif;
+	font-family: "bodoni mt",serif;
 
 		h2{
 			a{
@@ -70,7 +71,7 @@ justify-content: center;
 	background-color: $deliceback;
 	grid-column:1;
 	grid-row:2;
-	font-family: kunstler script,cursive;
+	font-family: "kunstler script",cursive;
 
 		h2{
 			a{
@@ -90,7 +91,7 @@ justify-content: center;
 	background-color: $paletteback;
 	grid-column:2;
 	grid-row:2;
-	font-family:cavolini, sans-serif;
+	font-family:"cavolini", sans-serif;
 
 		h2{
 			a{
@@ -128,7 +129,7 @@ grid-column-start: 1;
 grid-column-end: span 2;
 grid-row: 3;
 align-items: center;
-font-family: abadi,sans-serif;
+font-family: "abadi",sans-serif;
 
 	span{
 	font-size: 2rem;
@@ -162,7 +163,7 @@ font-family: abadi,sans-serif;
     height: auto;
     border-radius: 10px;
     text-align: center;
-    margin: 0 AUTO;
+    margin: 0 auto;
     padding: 6px;
 }
 
