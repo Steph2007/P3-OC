@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
+
 $accueiltext:#fdcb46;
 $accueilback:#579c87;
 $accueilborder:#a1c181;
@@ -22,35 +24,86 @@ $paletteleft:#3d9339;
 $paletteright:#bfff7e;
 
 body{
- margin: 0;
+margin: auto;
+font-family: "Roboto";
+display: block;
+
   	@media(min-width: 768px){
-  	display: block;
     max-width: 1200px;
   	}
-}
-
-  header{
-	grid-column-start: 1;
-	grid-column-end: span 2;
-	grid-row: 1;
-	background-color: $accueilback;
-	border-bottom-color: $accueilborder;
-	text-align: center;
-	height: 5rem;
-	display: flex;
-	justify-content: center;
-	font-family: abadi,sans-serif;
-		h1{		
-			a{
-			color: $accueiltext;
-			cursor: pointer;
-			text-decoration:none;
-			font-size: 1.5em;
-			}
+  	&.accueil{
+	@media(min-width: 768px){
+    max-width: 1200px;
 		}
+	}
 }
 
-  .degrade{
+header{
+grid-column-start: 1;
+grid-column-end: span 2;
+grid-row: 1;
+background-color: $accueilback;
+border-bottom-color: $accueilborder;
+text-align: center;
+height: 5rem;
+display: flex;
+justify-content: center;
+
+	h1{		
+		a{
+		color: $accueiltext;
+		cursor: pointer;
+		text-decoration:none;
+		font-size: 1.5em;
+		}
+	}
+}
+
+main{
+display: flex;
+flex-direction: column;
+margin-bottom: 80px;
+font-family: "Pangolin",sans-serif;
+	&.accueil{
+		@media(min-width: 768px){
+		display: grid;
+ 		grid-template-columns: 50% 50%;
+		grid-template-rows: 400px 400px 60px;
+		grid-auto-flow: column;
+		}
+	}
+}
+
+footer{
+background-color: $accueilback;
+border-top-color: $accueilborder;
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-width: 1200px;
+position: fixed;
+bottom: 0;
+
+	a {
+	cursor: pointer;
+	text-decoration:none;
+	padding: 1rem;
+	color:$accueiltext;
+		
+		&:hover {
+		animation:wiggle 200ms infinite;
+		}
+	}
+}
+
+@keyframes wiggle {
+       0% { transform: rotate(0deg); }
+      33% { transform: rotate(5deg); }
+      66% { transform: rotate(-5deg); }
+     100% { transform: rotate(0deg); }
+}
+
+.degrade{
 	
 	&.LaNoteEnchantee{
 	background:
@@ -82,32 +135,6 @@ body{
 	}
 }
 
-footer{
-background-color: $accueilback;
-border-top-color: $accueilborder;
-display: flex;
-justify-content: space-between;
-width: 100%;
-position: fixed;
-bottom: 0;
-font-family: abadi,sans-serif;
 
-	a {
-	cursor: pointer;
-	text-decoration:none;
-	padding: 1rem;
-	color:$accueiltext;
-		
-		&:hover {
-		animation:wiggle 200ms infinite;
-		}
-	}
-}
 
-@keyframes wiggle {
-       0% { transform: rotate(0deg); }
-      33% { transform: rotate(5deg); }
-      66% { transform: rotate(-5deg); }
-     100% { transform: rotate(0deg); }
-}
 
