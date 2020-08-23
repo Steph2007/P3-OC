@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
 body {
   margin: auto;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   display: block;
 }
 @media (min-width: 768px) {
@@ -38,7 +38,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: "Pangolin", sans-serif;
 }
 @media (min-width: 768px) {
   main.accueil {
@@ -269,7 +268,7 @@ aside span.thdpoint {
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
 body {
   margin: auto;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   display: block;
 }
 @media (min-width: 768px) {
@@ -305,7 +304,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: "Pangolin", sans-serif;
 }
 @media (min-width: 768px) {
   main.accueil {
@@ -509,7 +507,7 @@ h3 .trait.LaPaletteDuGout.inverse {
 }@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
 body {
   margin: auto;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   display: block;
 }
 @media (min-width: 768px) {
@@ -545,7 +543,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: "Pangolin", sans-serif;
 }
 @media (min-width: 768px) {
   main.accueil {
@@ -612,7 +609,7 @@ footer a:hover {
 }@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
 body {
   margin: auto;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   display: block;
 }
 @media (min-width: 768px) {
@@ -648,7 +645,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  font-family: "Pangolin", sans-serif;
 }
 @media (min-width: 768px) {
   main.accueil {
