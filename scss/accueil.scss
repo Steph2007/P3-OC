@@ -25,26 +25,14 @@ overflow: hidden;
 	grid-row:1;
 	font-family: "Pacifico",cursive;
 
-		h2{
-			// :before {
-			// content: "\f001";
-			// font-family: "Font Awesome 5 Free";
-			// margin-right: .5rem;
-			// font-size: 20px;
-			// margin-top:.3rem;
-			// font-weight:900;
-			// display: block;
-			// background:-webkit-linear-gradient(left,$noteleft,$noteright);
-			// -webkit-background-clip: text;
-			// -webkit-text-fill-color: transparent;
-			// }
-			
+	
+					
 
  			a{
 			color:$notetext;
 			text-decoration: none;
 			}
-		}
+		
 	}
 
 	&.LeChicALaFrancaise{

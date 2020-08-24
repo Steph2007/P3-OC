@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
-
 $accueiltext:#fdcb46;
 $accueilback:#579c87;
 $accueilborder:#a1c181;
@@ -26,6 +24,7 @@ $paletteright:#bfff7e;
 body{
 margin: auto;
 font-family: "Roboto",sans-serif;
+font-weight: bold;
 display: block;
 
   	@media(min-width: 768px){
@@ -72,6 +71,12 @@ margin-bottom: 80px;
 		grid-auto-flow: column;
 		}
 	}
+
+	&.mentions{
+		text-align: justify;
+		margin:auto;
+		width: 90%;
+	}
 }
 
 footer{
@@ -103,11 +108,6 @@ bottom: 0;
      100% { transform: rotate(0deg); }
 }
 
-@mixin degrade($colour1, $colour2){
- background:-webkit-linear-gradient(left,$colour1,$colour2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 
 .degrade{
 	
@@ -140,6 +140,18 @@ bottom: 0;
 	}
 }
 
+
+i{
+display: block;		
+margin-right: .5rem;
+font-size: 20px;
+margin-top:.3rem;
+font-weight:900;
+background:-webkit-linear-gradient(left,$noteleft,$noteright);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
 
 
 

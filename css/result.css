@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
 body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   display: block;
 }
 @media (min-width: 768px) {
@@ -45,6 +45,11 @@ main {
     grid-template-rows: 400px 400px 60px;
     grid-auto-flow: column;
   }
+}
+main.mentions {
+  text-align: justify;
+  margin: auto;
+  width: 90%;
 }
 
 footer {
@@ -102,6 +107,17 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+i {
+  display: block;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 article {
   width: 80vw;
   max-width: 250px;
@@ -127,7 +143,7 @@ article.LaNoteEnchantee {
   grid-row: 1;
   font-family: "Pacifico", cursive;
 }
-article.LaNoteEnchantee h2 a {
+article.LaNoteEnchantee a {
   color: #3c1218;
   text-decoration: none;
 }
@@ -251,10 +267,10 @@ aside span.thdpoint {
   text-align: center;
   margin: 0 auto;
   padding: 6px;
-}@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
-body {
+}body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   display: block;
 }
 @media (min-width: 768px) {
@@ -298,6 +314,11 @@ main {
     grid-template-rows: 400px 400px 60px;
     grid-auto-flow: column;
   }
+}
+main.mentions {
+  text-align: justify;
+  margin: auto;
+  width: 90%;
 }
 
 footer {
@@ -351,6 +372,17 @@ footer a:hover {
 }
 .degrade.LaPaletteDuGout {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i {
+  display: block;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -468,10 +500,10 @@ h3 .trait.LaPaletteDuGout {
 }
 h3 .trait.LaPaletteDuGout.inverse {
   transform: scaleX(-1);
-}@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
-body {
+}body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   display: block;
 }
 @media (min-width: 768px) {
@@ -515,6 +547,11 @@ main {
     grid-template-rows: 400px 400px 60px;
     grid-auto-flow: column;
   }
+}
+main.mentions {
+  text-align: justify;
+  margin: auto;
+  width: 90%;
 }
 
 footer {
@@ -570,10 +607,21 @@ footer a:hover {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kaushan+Script|PT+Serif|Pacifico|Kalam|Roboto:700&display=swap");
-body {
+}
+
+i {
+  display: block;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}body {
   margin: auto;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   display: block;
 }
 @media (min-width: 768px) {
@@ -617,6 +665,11 @@ main {
     grid-template-rows: 400px 400px 60px;
     grid-auto-flow: column;
   }
+}
+main.mentions {
+  text-align: justify;
+  margin: auto;
+  width: 90%;
 }
 
 footer {
@@ -670,6 +723,17 @@ footer a:hover {
 }
 .degrade.LaPaletteDuGout {
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i {
+  display: block;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  margin-top: 0.3rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
