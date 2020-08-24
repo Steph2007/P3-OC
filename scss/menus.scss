@@ -9,23 +9,23 @@ main{
     font-family: "Kalam",cursive;
     	h2{
     	font-family: "Pacifico",cursive;
+    	margin-block-start: 0;
 		}
 		 
-
 		p{
 		text-align: center;	
 		font-family: "Pacifico",cursive;
 		font-size: 1.5rem;
 		}
 	}
-    
-
+   
     &.LeChicALaFrancaise{
   	background-color:$chicback;
   	font-family: "Croissant One",Serif;
 
   		h2{
 		width: fit-content;
+		@include txt-gradient($degradechic);
 		}
    	}
 
@@ -96,35 +96,57 @@ h3{
 	display: flex;
 	justify-content: center;
 	text-align: center;
+		.LaNoteEnchantee{
+		color:$notetext;
+		font-family: "Pacifico",cursive;
+		}
+		.firstchic{
+		color:$chicleft;
+		}
+		.scdchic{
+		color:$chiccenter;
+		}
+		.thdchic{
+		color:$chicright;
+		}
+}
 
-	.trait{
-		display: block;
-		width: 25%;
-		height: 2px;
-		margin:auto;
-		
-		&.LaNoteEnchantee{
-			background:$notetext;
-			font-family: "Pacifico",cursive;
-		}
-		&.firstchic{
-			background:$chicleft;
-		}
-		&.scdchic{
-			background:$chiccenter;
-		}
-		&.thdchic{
-			background:$chicright;
-		}
-		&.LeDeliceDesPapilles{
-			background:$delicetext;
-		}
-		&.LaPaletteDuGout{
-		background: -webkit-linear-gradient(left, $paletteleft, $paletteright);
- 		-webkit-text-fill-color: transparent;
-			&.inverse{
-			transform: scaleX(-1);
-			}
-		}
+@mixin trait(){
+display: block;
+width: 25%;
+height: 2px;
+margin:auto;
+}
+
+.trait{
+					
+	&.LaNoteEnchantee{
+	@include trait();
+	background:$notetext;
+	}
+	&.firstchic{
+	@include trait();
+	background:$chicleft;
+	}
+	&.scdchic{
+	@include trait();
+	background:$chiccenter;
+	}
+	&.thdchic{
+	@include trait();
+	background:$chicright;
+	}
+	&.LeDeliceDesPapilles{
+	@include trait();
+	background:$deliceleft;
+	}
+	&.LaPaletteDuGout{
+	@include trait();
+	background: -webkit-linear-gradient(left, $paletteleft, $paletteright);
+ 	-webkit-text-fill-color: transparent;
+		&.inverse{
+		transform: scaleX(-1);
 	}
 }
+}
+

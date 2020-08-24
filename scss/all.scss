@@ -119,34 +119,13 @@ bottom: 0;
      100% { transform: rotate(0deg); }
 }
 
-
-.degrade{
-	
-	&.LaNoteEnchantee{
-	@include txt-gradient($degradenote);
-	}
-
-	&.LeChicALaFrancaise{
-	@include txt-gradient($degradechic);
-	}
-
-	&.LeDeliceDesPapilles{
-	@include txt-gradient($degradedelice);
-	}
-
-	&.LaPaletteDuGout{
-	@include txt-gradient($degradepalette);
-	}
-}
-
-
-
 i{
 display: block;		
 margin-right: .5rem;
 font-size: 20px;
 margin-top:.3rem;
 font-weight:900;
+align-self:center;
 @include txt-gradient($degradenote);
 }
 

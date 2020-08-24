@@ -86,33 +86,13 @@ footer a:hover {
     transform: rotate(0deg);
   }
 }
-.degrade.LaNoteEnchantee {
-  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeChicALaFrancaise {
-  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeDeliceDesPapilles {
-  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LaPaletteDuGout {
-  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 i {
   display: block;
   margin-right: 0.5rem;
   font-size: 20px;
   margin-top: 0.3rem;
   font-weight: 900;
+  align-self: center;
   background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -355,33 +335,13 @@ footer a:hover {
     transform: rotate(0deg);
   }
 }
-.degrade.LaNoteEnchantee {
-  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeChicALaFrancaise {
-  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeDeliceDesPapilles {
-  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LaPaletteDuGout {
-  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 i {
   display: block;
   margin-right: 0.5rem;
   font-size: 20px;
   margin-top: 0.3rem;
   font-weight: 900;
+  align-self: center;
   background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -394,6 +354,7 @@ main.LaNoteEnchantee {
 }
 main.LaNoteEnchantee h2 {
   font-family: "Pacifico", cursive;
+  margin-block-start: 0;
 }
 main.LaNoteEnchantee p {
   text-align: center;
@@ -406,6 +367,9 @@ main.LeChicALaFrancaise {
 }
 main.LeChicALaFrancaise h2 {
   width: fit-content;
+  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main.LeDeliceDesPapilles {
   background-color: #f9f9f9;
@@ -471,33 +435,64 @@ h3 {
   justify-content: center;
   text-align: center;
 }
-h3 .trait {
+h3 .LaNoteEnchantee {
+  color: #3c1218;
+  font-family: "Pacifico", cursive;
+}
+h3 .firstchic {
+  color: #d8852e;
+}
+h3 .scdchic {
+  color: #b67094;
+}
+h3 .thdchic {
+  color: #905bfd;
+}
+
+.trait.LaNoteEnchantee {
   display: block;
   width: 25%;
   height: 2px;
   margin: auto;
-}
-h3 .trait.LaNoteEnchantee {
   background: #3c1218;
-  font-family: "Pacifico", cursive;
 }
-h3 .trait.firstchic {
+.trait.firstchic {
+  display: block;
+  width: 25%;
+  height: 2px;
+  margin: auto;
   background: #d8852e;
 }
-h3 .trait.scdchic {
+.trait.scdchic {
+  display: block;
+  width: 25%;
+  height: 2px;
+  margin: auto;
   background: #b67094;
 }
-h3 .trait.thdchic {
+.trait.thdchic {
+  display: block;
+  width: 25%;
+  height: 2px;
+  margin: auto;
   background: #905bfd;
 }
-h3 .trait.LeDeliceDesPapilles {
-  background: #0887fb;
+.trait.LeDeliceDesPapilles {
+  display: block;
+  width: 25%;
+  height: 2px;
+  margin: auto;
+  background: #0022db;
 }
-h3 .trait.LaPaletteDuGout {
+.trait.LaPaletteDuGout {
+  display: block;
+  width: 25%;
+  height: 2px;
+  margin: auto;
   background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
   -webkit-text-fill-color: transparent;
 }
-h3 .trait.LaPaletteDuGout.inverse {
+.trait.LaPaletteDuGout.inverse {
   transform: scaleX(-1);
 }body {
   margin: auto;
@@ -587,33 +582,13 @@ footer a:hover {
     transform: rotate(0deg);
   }
 }
-.degrade.LaNoteEnchantee {
-  background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeChicALaFrancaise {
-  background: -webkit-linear-gradient(left, #d8852e, #905bfd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LeDeliceDesPapilles {
-  background: -webkit-linear-gradient(left, #0022db, #64b2f6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.degrade.LaPaletteDuGout {
-  background: -webkit-linear-gradient(left, #3d9339, #bfff7e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 i {
   display: block;
   margin-right: 0.5rem;
   font-size: 20px;
   margin-top: 0.3rem;
   font-weight: 900;
+  align-self: center;
   background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
