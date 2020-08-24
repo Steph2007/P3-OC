@@ -5,7 +5,6 @@ var fs = require('fs');
 const src=[
 	"accueil",
 	"menus",
-	"mentions",
 	"all",
 ];
 

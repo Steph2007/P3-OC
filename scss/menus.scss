@@ -36,9 +36,7 @@ main{
 
   		h2{
   		width: fit-content;
-  		background: -webkit-linear-gradient(left,$deliceleft,$deliceright);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+  		@include txt-gradient($degradedelice);
   		}
 	}
 
@@ -49,9 +47,7 @@ main{
 
   		h2{
   		width: fit-content;
-  		background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+  		@include txt-gradient($degradepalette);
   		}
 	}
 }
@@ -124,11 +120,10 @@ h3{
 			background:$delicetext;
 		}
 		&.LaPaletteDuGout{
-			background:-webkit-linear-gradient(left,$paletteleft,$paletteright);
-			-webkit-background-clip:initial;
-			-webkit-text-fill-color: transparent;
+		background: -webkit-linear-gradient(left, $paletteleft, $paletteright);
+ 		-webkit-text-fill-color: transparent;
 			&.inverse{
-				transform: scaleX(-1);
+			transform: scaleX(-1);
 			}
 		}
 	}

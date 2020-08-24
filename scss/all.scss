@@ -21,6 +21,17 @@ $palettetextmenu:#000000;
 $paletteleft:#3d9339;
 $paletteright:#bfff7e;
 
+$degradenote:$noteleft,$noteright;
+$degradechic:$chicleft,$chicright;
+$degradedelice:$deliceleft,$deliceright;
+$degradepalette:$paletteleft,$paletteright;
+
+@mixin txt-gradient($degrade){
+background: -webkit-linear-gradient( left,$degrade);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 body{
 margin: auto;
 font-family: "Roboto",sans-serif;
@@ -112,33 +123,22 @@ bottom: 0;
 .degrade{
 	
 	&.LaNoteEnchantee{
-	background:-webkit-linear-gradient(left,$noteleft,$noteright);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	@include txt-gradient($degradenote);
 	}
 
 	&.LeChicALaFrancaise{
-	background: 
-	-webkit-linear-gradient(left,$chicleft,$chicright);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	@include txt-gradient($degradechic);
 	}
 
 	&.LeDeliceDesPapilles{
-
-	background: 
-	-webkit-linear-gradient(left,$deliceleft,$deliceright);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	@include txt-gradient($degradedelice);
 	}
 
 	&.LaPaletteDuGout{
-	background: 
-	-webkit-linear-gradient(left,$paletteleft,$paletteright);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	@include txt-gradient($degradepalette);
 	}
 }
+
 
 
 i{
@@ -147,10 +147,7 @@ margin-right: .5rem;
 font-size: 20px;
 margin-top:.3rem;
 font-weight:900;
-background:-webkit-linear-gradient(left,$noteleft,$noteright);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-
+@include txt-gradient($degradenote);
 }
 
 

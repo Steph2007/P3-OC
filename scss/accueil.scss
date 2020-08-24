@@ -49,9 +49,7 @@ overflow: hidden;
 
 			span{
 			font-size: small;
-			background:-webkit-linear-gradient(left,$chicleft,$chicright);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include txt-gradient($degradechic);
 			}
 		}
 
@@ -71,9 +69,7 @@ overflow: hidden;
 			}
 
 			span{
-			background: -webkit-linear-gradient(left,$deliceleft,$deliceright);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include txt-gradient($degradedelice);
 			}
 		}
 	}
@@ -91,9 +87,7 @@ overflow: hidden;
 			}
 
 			span{
-			background: -webkit-linear-gradient(left,$paletteleft,$paletteright);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include txt-gradient($degradepalette);
 			}
 		}
 	}
