@@ -135,10 +135,10 @@ article.LaNoteEnchantee h2 :before {
   font-size: 20px;
   margin-top: 0.3rem;
   font-weight: 900;
+  display: block;
   background: -webkit-linear-gradient(left, #f04a5e, #f78f6a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
 }
 article.LaNoteEnchantee h2 a {
   color: #3c1218;
@@ -155,10 +155,10 @@ article.LeChicALaFrancaise h2 a {
   text-decoration: none;
 }
 article.LeChicALaFrancaise h2 span {
+  font-size: small;
   background: -webkit-linear-gradient(left, #d8852e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: small;
 }
 article.LeDeliceDesPapilles {
   background-color: #f9f9f9;
@@ -193,7 +193,6 @@ article.LaPaletteDuGout h2 span {
 article h2:hover {
   animation: zoom 600ms infinite;
 }
-
 @keyframes zoom {
   0% {
     transform: scale(1);
@@ -216,6 +215,7 @@ article h2:hover {
     opacity: 25%;
   }
 }
+
 aside {
   grid-column-start: 1;
   grid-column-end: span 2;

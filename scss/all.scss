@@ -103,11 +103,16 @@ bottom: 0;
      100% { transform: rotate(0deg); }
 }
 
+@mixin degrade($colour1, $colour2){
+ background:-webkit-linear-gradient(left,$colour1,$colour2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .degrade{
 	
 	&.LaNoteEnchantee{
-	background:
-	-webkit-linear-gradient(left,$noteleft,$noteright);
+	background:-webkit-linear-gradient(left,$noteleft,$noteright);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	}
