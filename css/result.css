@@ -354,7 +354,6 @@ main.LaNoteEnchantee {
 }
 main.LaNoteEnchantee h2 {
   font-family: "Pacifico", cursive;
-  margin-block-start: 0;
 }
 main.LaNoteEnchantee p {
   text-align: center;
