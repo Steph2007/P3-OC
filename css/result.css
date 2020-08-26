@@ -22,7 +22,7 @@ header {
   background-color: #579c87;
   border-bottom-color: #a1c181;
   text-align: center;
-  height: 5rem;
+  height: 10%;
   display: flex;
   justify-content: center;
 }
@@ -89,7 +89,7 @@ footer a:hover {
 i {
   display: block;
   margin-right: 0.5rem;
-  font-size: 20px;
+  font-size: 2.5rem;
   margin-top: 0.3rem;
   font-weight: 900;
   align-self: center;
@@ -271,7 +271,7 @@ header {
   background-color: #579c87;
   border-bottom-color: #a1c181;
   text-align: center;
-  height: 5rem;
+  height: 10%;
   display: flex;
   justify-content: center;
 }
@@ -338,7 +338,7 @@ footer a:hover {
 i {
   display: block;
   margin-right: 0.5rem;
-  font-size: 20px;
+  font-size: 2.5rem;
   margin-top: 0.3rem;
   font-weight: 900;
   align-self: center;
@@ -517,7 +517,7 @@ header {
   background-color: #579c87;
   border-bottom-color: #a1c181;
   text-align: center;
-  height: 5rem;
+  height: 10%;
   display: flex;
   justify-content: center;
 }
@@ -584,7 +584,7 @@ footer a:hover {
 i {
   display: block;
   margin-right: 0.5rem;
-  font-size: 20px;
+  font-size: 2.5rem;
   margin-top: 0.3rem;
   font-weight: 900;
   align-self: center;
